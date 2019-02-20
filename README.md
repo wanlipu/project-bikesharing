@@ -20,7 +20,7 @@ Using Anaconda consists of the following:
 
 - __Windows__: 
 ```
-conda create --name deep-learning python=3.6
-activate deep-learning
+conda create --name deep-learning python=3.6.5
+conda activate deep-learning
 conda install numpy matplotlib pandas jupyter notebook
 ```
