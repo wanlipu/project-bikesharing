@@ -18,7 +18,9 @@ Using Anaconda consists of the following:
 1. Install [`miniconda`](http://conda.pydata.org/miniconda.html) on your computer, by selecting the latest Python version for your operating system. If you already have `conda` or `miniconda` installed, you should be able to skip this step and move on to step 2.
 2. Create and activate * a new `conda` [environment](http://conda.pydata.org/docs/using/envs.html).
 
+- __Windows__: 
+```
 conda create --name deep-learning python=3.6
-conda activate deep-learning
+activate deep-learning
 conda install numpy matplotlib pandas jupyter notebook
-
+```
