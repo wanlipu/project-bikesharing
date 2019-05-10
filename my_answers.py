@@ -99,8 +99,11 @@ class NeuralNetwork(object):
         hidden_error_term = hidden_error * hidden_outputs * (1 - hidden_outputs)
         
         # Weight step (input to hidden)
+        # (y-output) * weight_hidden_to_output.T * sigoid_prime * input_values
         delta_weights_i_h += hidden_error_term * X.reshape(-1, 1)
+        
         # Weight step (hidden to output)
+        # (y-output) * hidden_nodes_values
         delta_weights_h_o += output_error_term * hidden_outputs.reshape(-1, 1)
         return delta_weights_i_h, delta_weights_h_o
 
