@@ -1,6 +1,8 @@
 .udacity-pa
 .idea
 .ipynb_checkpoints
+*.zip
+*.json
 __pycache__
 Bike-Sharing-Dataset
 assets
